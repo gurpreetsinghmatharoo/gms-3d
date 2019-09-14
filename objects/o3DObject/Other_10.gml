@@ -11,6 +11,7 @@ var _uvs = texture_get_uvs(_tex);
 vbuff = vertex_create_buffer();
 
 vertex_begin(vbuff, VF_3D) {
+	// Tri 0
 	vertex_position_3d(vbuff, 0, _w/2, -_h);
 	vertex_texcoord(vbuff, _uvs[0], _uvs[1]);
 	vertex_color(vbuff, color, alpha);
@@ -19,6 +20,7 @@ vertex_begin(vbuff, VF_3D) {
 	vertex_texcoord(vbuff, _uvs[2], _uvs[1]);
 	vertex_color(vbuff, color, alpha);
 	
+	// Tri 1
 	vertex_position_3d(vbuff, 0, -_w/2, 0);
 	vertex_texcoord(vbuff, _uvs[2], _uvs[3]);
 	vertex_color(vbuff, color, alpha);
