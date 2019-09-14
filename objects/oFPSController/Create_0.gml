@@ -27,4 +27,6 @@ moveMax = 2;
 // Gravity
 gravIncr = 0.1;
 gravMax = 10;
+
+jumpSpeed = 1.5;
 #endregion

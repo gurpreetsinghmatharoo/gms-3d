@@ -8,6 +8,11 @@ rot[X] = clamp(rot[X], -80, 80);
 
 #region Gravity
 if (force[Z] < gravMax) force[Z] += gravIncr;
+
+// Jump
+if (jump) {
+	force[Z] = -jumpSpeed;
+}
 #endregion
 
 #region Movement

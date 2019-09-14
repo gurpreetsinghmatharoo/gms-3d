@@ -23,3 +23,5 @@ up = keyboard_check(ord("W"));
 
 inputX = right - left;
 inputY = down - up;
+
+jump = keyboard_check_pressed(vk_space);
