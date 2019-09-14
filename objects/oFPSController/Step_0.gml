@@ -12,7 +12,10 @@ if (force[Z] < gravMax) force[Z] += gravIncr;
 
 #region Movement
 // X
-var _xTarget = inputX * moveMax;
+var _xTarget = 
+	inputX * moveMax * dcos(rotZ+90)
+	+ -inputY * moveMax * dcos(rotZ);
+	
 var _xDiff = _xTarget - force[X];
 
 if (abs(_xDiff) > moveIncr)	
@@ -21,7 +24,10 @@ else
 	force[X] = _xTarget;
 
 // Y
-var _yTarget = inputY * moveMax;
+var _yTarget = 
+	inputX * moveMax * dsin(rotZ+90)
+	+ -inputY * moveMax * dsin(rotZ);
+	
 var _yDiff = _yTarget - force[Y];
 
 if (abs(_yDiff) > moveIncr)	
