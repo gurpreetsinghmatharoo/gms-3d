@@ -5,3 +5,7 @@ rotX += mouseYDelta * sensY;
 
 rotX = clamp(rotX, -80, 80);
 #endregion
+
+#region Movement
+
+#endregion

@@ -1,7 +1,7 @@
-#macro new 
-
 #region ColShape
 enum COL {
+	X,
+	Y,
 	RADIUS
 }
 #endregion

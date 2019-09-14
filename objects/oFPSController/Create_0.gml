@@ -14,4 +14,4 @@ mouseX = device_mouse_x(0);
 mouseY = device_mouse_y(0);
 
 // Collision shape
-col = new ColShape(32);
+col = ColShape(32);
