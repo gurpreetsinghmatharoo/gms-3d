@@ -41,7 +41,7 @@ else
 	force[Y] = _yTarget;
 
 // Collisions
-colEnv(col, force);
+grounded = colEnv(col, force);
 
 // Apply
 x += force[X];
@@ -49,7 +49,7 @@ y += force[Y];
 z += force[Z];
 
 // Update collisions
-grounded = ColUpdate();
+ColUpdate();
 #endregion
 
 #region Offset rotation
@@ -61,6 +61,6 @@ for (var i=0; i<3; i++) {
 
 // Land
 if (grounded && !groundedPrev) {
-	rot2[X] = 20;
+	rot2[X] = 1;
 }
 #endregion
