@@ -1,5 +1,5 @@
 /// @description 
 #region Mouse rotation
 rotZ += mouseXDelta * sensX;
-rotX -= mouseYDelta * sensY;
+rotX += mouseYDelta * sensY;
 #endregion

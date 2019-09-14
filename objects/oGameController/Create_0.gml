@@ -6,14 +6,10 @@
 // Resolution
 #macro RES_W 1280
 #macro RES_H 720
-#macro RES_SCALE 1
+#macro RES_SCALE 4
 
 // Set up camera
 camera = camera_create_view(0, 0, 1280, 720);
-
-view_enabled = true;
-view_visible = true;
-view_set_camera(0, camera);
 
 // Set up 3D
 gpu_set_ztestenable(true);
@@ -25,6 +21,7 @@ camera_set_proj_mat(camera, matProj);
 // Resolution
 window_set_size(RES_W, RES_H);
 surface_resize(application_surface, RES_W / RES_SCALE, RES_H / RES_SCALE);
+display_set_gui_size(RES_W, RES_H);
 
 // Mouse
 window_set_cursor(cr_none);
