@@ -30,9 +30,13 @@ else
 	force[Y] = _yTarget;
 
 // Collisions
+colEnv(col, force);
 
 // Apply
 x += force[X];
 y += force[Y];
 z += force[Z];
+
+// Update collisions
+ColUpdate();
 #endregion
