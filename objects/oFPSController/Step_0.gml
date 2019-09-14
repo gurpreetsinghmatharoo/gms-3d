@@ -15,5 +15,16 @@ if (force[Z] < gravMax) force[Z] += gravIncr;
 var _xTarget = inputX * moveMax;
 var _xDiff = _xTarget - force[X];
 
+if (abs(_xDiff) > moveIncr)	
+	force[X] += sign(_xDiff) * moveIncr;
+else
+	force[X] = _xTarget;
 
+
+// Collisions
+
+// Apply
+x += force[X];
+y += force[Y];
+z += force[Z];
 #endregion
