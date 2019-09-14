@@ -63,8 +63,9 @@ for (var i=0; i<3; i++) {
 // Bob while moving
 if (abs(force[X]) || abs(force[Y])) {
 	var _spd = 2;
-	var _sinX = dsin(current_time / _spd);
-	var _sinZ = dsin(current_time / (_spd * 2));
+	var _sinX = abs(dsin(current_time / _spd));
+	_sinX *= _sinX;
+	var _sinZ = dsin(current_time / _spd);
 	
 	rot2Target[X] = _sinX * 10;
 	rot2Target[Z] = _sinZ * 10;

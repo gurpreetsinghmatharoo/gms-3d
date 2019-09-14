@@ -27,4 +27,5 @@ display_set_gui_size(RES_W, RES_H);
 window_set_cursor(cr_none);
 
 // Test surface
+surface_depth_disable(true);
 testSurf = -1;
