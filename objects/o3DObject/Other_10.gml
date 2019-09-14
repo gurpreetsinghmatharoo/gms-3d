@@ -11,7 +11,10 @@ var _uvs = texture_get_uvs(_tex);
 vbuff = vertex_create_buffer();
 
 vertex_begin(vbuff, VF_3D) {
-	
+	vertex_position_3d(vbuff, 0, _w/2, -_h);
+	vertex_position_3d(vbuff, 0, -_w/2, -_h);
+	vertex_position_3d(vbuff, 0, -_w/2, 0);
+	vertex_position_3d(vbuff, 0, _w/2, 0);
 } vertex_end(vbuff);
 
 vertex_freeze(vbuff);
