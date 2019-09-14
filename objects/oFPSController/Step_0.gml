@@ -11,5 +11,9 @@ if (force[Z] < gravMax) force[Z] += gravIncr;
 #endregion
 
 #region Movement
+// X
+var _xTarget = inputX * moveMax;
+var _xDiff = _xTarget - force[X];
+
 
 #endregion
