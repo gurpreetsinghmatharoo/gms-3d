@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "574cb967-a891-499d-8449-f09875d00cff",
+            "Value": {
+                "id": "a3b31baf-77c0-455f-92be-a8ffcd2df3e1",
+                "resourcePath": "scripts\\draw3DObject\\draw3DObject.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "6870e730-616f-471e-ba42-6ad95d3a3360",
             "Value": {
                 "id": "39f1a5f7-5afc-448a-a3e7-c3effbe83f96",
@@ -382,7 +390,8 @@
         "be99907a-50d7-4597-8e9b-4153c45783f6",
         "d38d5632-5085-4a99-b14d-e0fefa032838",
         "9d7361a5-438c-4760-96f8-4cfdd862601b",
-        "01da5d9a-127a-42cd-8cf2-8f587af9dcba"
+        "01da5d9a-127a-42cd-8cf2-8f587af9dcba",
+        "574cb967-a891-499d-8449-f09875d00cff"
     ],
     "tutorial": ""
 }
