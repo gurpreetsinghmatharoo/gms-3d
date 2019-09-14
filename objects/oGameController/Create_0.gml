@@ -25,3 +25,6 @@ display_set_gui_size(RES_W, RES_H);
 
 // Mouse
 window_set_cursor(cr_none);
+
+// Test surface
+testSurf = -1;
