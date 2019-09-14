@@ -58,7 +58,7 @@
             "Key": "347fae88-3092-47e4-8277-a9bcc2d0cf74",
             "Value": {
                 "id": "4616be78-8a81-422b-be66-0e602a1d7210",
-                "resourcePath": "rooms\\room0\\room0.yy",
+                "resourcePath": "rooms\\rmGame\\rmGame.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -212,6 +212,14 @@
                 "id": "51e2295e-c5c1-4876-89f7-1e231a55f774",
                 "resourcePath": "sprites\\sFloor\\sFloor.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ba5d6509-119a-48eb-a648-063a94cfc692",
+            "Value": {
+                "id": "f830fa7a-f870-481c-aae1-2351fd3b3c3e",
+                "resourcePath": "rooms\\rmInit\\rmInit.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
