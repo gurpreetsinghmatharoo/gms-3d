@@ -362,7 +362,7 @@
             "Key": "faec0bf2-7109-4a82-a06b-836e80af3fbe",
             "Value": {
                 "id": "264f71e7-fc02-455a-aa46-7224a945d649",
-                "resourcePath": "scripts\\constants\\constants.yy",
+                "resourcePath": "scripts\\init\\init.yy",
                 "resourceType": "GMScript"
             }
         },
