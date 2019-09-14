@@ -23,10 +23,12 @@ var _xTarget =
 	
 var _xDiff = _xTarget - force[X];
 
-if (abs(_xDiff) > moveIncr)	
-	force[X] += sign(_xDiff) * moveIncr;
-else
-	force[X] = _xTarget;
+//if (abs(_xDiff) > moveIncr)	
+//	force[X] += sign(_xDiff) * moveIncr;
+//else
+//	force[X] = _xTarget;
+
+force[X] = lerp(force[X], _xTarget, moveIncr);
 
 // Y
 var _yTarget = 
@@ -35,10 +37,12 @@ var _yTarget =
 	
 var _yDiff = _yTarget - force[Y];
 
-if (abs(_yDiff) > moveIncr)	
-	force[Y] += sign(_yDiff) * moveIncr;
-else
-	force[Y] = _yTarget;
+//if (abs(_yDiff) > moveIncr)	
+//	force[Y] += sign(_yDiff) * moveIncr;
+//else
+//	force[Y] = _yTarget;
+
+force[Y] = lerp(force[Y], _yTarget, moveIncr);
 
 // Collisions
 grounded = colEnv(col, force);
