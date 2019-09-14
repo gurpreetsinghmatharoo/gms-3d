@@ -17,9 +17,13 @@ mouseY = device_mouse_y(0);
 col = ColShape(x, y, 32);
 
 #region Movement
-moveX = 0;
-moveY = 0;
-moveZ = 0;
+force = [0, 0, 0];
 
+// Movement
+moveIncr = 0.2;
+moveMax = 2;
 
+// Gravity
+gravIncr = 0.1;
+gravMax = 10;
 #endregion
