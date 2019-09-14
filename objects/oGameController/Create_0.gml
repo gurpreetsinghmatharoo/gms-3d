@@ -6,7 +6,7 @@
 // Resolution
 #macro RES_W 1280
 #macro RES_H 720
-#macro RES_SCALE 3
+#macro RES_SCALE 4
 
 // Set up camera
 camera = camera_create_view(0, 0, 1280, 720);

@@ -86,10 +86,12 @@ if (grounded && !groundedPrev) {
 #region Test
 // Create 3d objects
 if (mouse_check_button_pressed(mb_left)) {
-	var _dist = 32;
-	var _x = x + lengthdir_x(_dist, rot[Z]);
-	var _y = y + lengthdir_y(_dist, rot[Z]);
+	var _dist = 128;
+	var _x = x + lengthdir_x(_dist, -rot[Z]);
+	var _y = y + lengthdir_y(_dist, -rot[Z]);
 	
-	create3DObject(_x, _y, z, sTest);
+	with create3DObject(_x, _y, z + col[RAD], sTest) {
+		rot[Z] = point_direction(x, y, other.x, other.y);
+	}
 }
 #endregion
