@@ -7,5 +7,7 @@ scale = [1, 1, 1];
 
 // Sprite
 sprite = -1;
+color = c_white;
+alpha = 1;
 
 vbuff = -1;
