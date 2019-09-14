@@ -1,4 +1,6 @@
 /// @description 
+if (!window_has_focus()) exit;
+
 // Mouse
 mouseXPrev = RES_W * 0.5;
 mouseYPrev = RES_H * 0.5;

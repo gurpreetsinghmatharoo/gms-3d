@@ -54,13 +54,20 @@ ColUpdate();
 
 #region Offset rotation
 
-// Return to 0
+// Lerpin
 for (var i=0; i<3; i++) {
-	rot2[i] = lerp(rot2[i], 0, 0.1);
+	rot2[i] = lerp(rot2[i], rot2Target[i], 0.2);
+	rot2Target[i] = lerp(rot2Target[i], 0, 0.1);
+}
+
+// Bob while moving
+if (abs(force[X]) || abs(force[Y])) {
+	rot2Target[X] = dsin(current_time / 1) * 10;
+	rot2Target[Z] = dsin(current_time / 1) * 10;
 }
 
 // Land
 if (grounded && !groundedPrev) {
-	rot2[X] = 1;
+	rot2Target[X] = 3;
 }
 #endregion

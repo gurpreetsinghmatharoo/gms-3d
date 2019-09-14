@@ -6,6 +6,7 @@ rot[Z] = 0;
 
 // Offset rotation
 rot2 = [0, 0, 0];
+rot2Target = [0, 0, 0];
 
 // Position
 z = depth;
