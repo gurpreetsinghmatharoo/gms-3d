@@ -1,7 +1,8 @@
 /// @description 
 // Rotation
-rotX = -30;
-rotZ = 0;
+rot[X] = -30;
+rot[Y] = 0;
+rot[Z] = 0;
 
 // Position
 z = depth;

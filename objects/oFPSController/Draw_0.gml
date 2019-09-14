@@ -3,9 +3,9 @@
 // Look at
 var lookX, lookY, lookZ;
 
-lookX = x + dcos(rotZ);
-lookY = y + dsin(rotZ);
-lookZ = z + dsin(rotX);
+lookX = x + dcos(rot[Z]);
+lookY = y + dsin(rot[Z]);
+lookZ = z + dsin(rot[X]);
 
 // View matrix
 matView = matrix_build_lookat(x, y, z, lookX, lookY, lookZ, 0, 0, 1);

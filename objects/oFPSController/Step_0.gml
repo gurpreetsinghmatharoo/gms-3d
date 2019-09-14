@@ -1,9 +1,9 @@
 /// @description 
 #region Mouse rotation
-rotZ += mouseXDelta * sensX;
-rotX += mouseYDelta * sensY;
+rot[Z] += mouseXDelta * sensX;
+rot[X] += mouseYDelta * sensY;
 
-rotX = clamp(rotX, -80, 80);
+rot[X] = clamp(rot[X], -80, 80);
 #endregion
 
 #region Gravity
@@ -13,8 +13,8 @@ if (force[Z] < gravMax) force[Z] += gravIncr;
 #region Movement
 // X
 var _xTarget = 
-	inputX * moveMax * dcos(rotZ+90)
-	+ -inputY * moveMax * dcos(rotZ);
+	inputX * moveMax * dcos(rot[Z]+90)
+	+ -inputY * moveMax * dcos(rot[Z]);
 	
 var _xDiff = _xTarget - force[X];
 
@@ -25,8 +25,8 @@ else
 
 // Y
 var _yTarget = 
-	inputX * moveMax * dsin(rotZ+90)
-	+ -inputY * moveMax * dsin(rotZ);
+	inputX * moveMax * dsin(rot[Z]+90)
+	+ -inputY * moveMax * dsin(rot[Z]);
 	
 var _yDiff = _yTarget - force[Y];
 
