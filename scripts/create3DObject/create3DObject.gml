@@ -14,6 +14,10 @@ var _inst = instance_create_layer(_x, _y, "Instances", o3DObject);
 
 with (_inst) {
 	z = _z;
+	sprite = _spr;
+	
+	// Start
+	event_user(0);
 }
 
 // End
