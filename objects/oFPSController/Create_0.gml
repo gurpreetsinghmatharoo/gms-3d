@@ -14,7 +14,7 @@ mouseX = device_mouse_x(0);
 mouseY = device_mouse_y(0);
 
 // Collision shape
-col = ColShape(x, y, 32);
+col = ColShape(x, y, z, 32);
 
 #region Movement
 force = [0, 0, 0];
