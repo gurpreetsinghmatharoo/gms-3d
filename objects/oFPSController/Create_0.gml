@@ -21,6 +21,10 @@ mouseY = device_mouse_y(0);
 // Collision shape
 col = ColShape(x, y, z, 32);
 
+// Vars
+grounded = false;
+groundedPrev = false;
+
 #region Movement
 force = [0, 0, 0];
 
@@ -35,6 +39,6 @@ gravMax = 10;
 jumpSpeed = 1.5;
 #endregion
 
-// Vars
-grounded = false;
-groundedPrev = false;
+#region Create Weapon
+weapon = create3DObject(x, y, z, sGun0);
+#endregion
