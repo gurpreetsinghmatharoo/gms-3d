@@ -20,6 +20,14 @@ if (abs(_xDiff) > moveIncr)
 else
 	force[X] = _xTarget;
 
+// Y
+var _yTarget = inputY * moveMax;
+var _yDiff = _yTarget - force[Y];
+
+if (abs(_yDiff) > moveIncr)	
+	force[Y] += sign(_yDiff) * moveIncr;
+else
+	force[Y] = _yTarget;
 
 // Collisions
 
