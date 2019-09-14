@@ -68,6 +68,13 @@ if (abs(force[X]) || abs(force[Y])) {
 	
 	rot2Target[X] = _sinX * 10;
 	rot2Target[Z] = _sinZ * 10;
+	
+	// Test
+	surface_set_target(oGameController.testSurf);
+	
+	draw_circle_color(RES_W / 2 + rot2Target[Z], RES_H / 2 + rot2Target[X], 2, c_red, c_red, 0);
+	
+	surface_reset_target();
 }
 
 // Land
