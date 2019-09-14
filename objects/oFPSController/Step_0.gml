@@ -60,19 +60,21 @@ for (var i=0; i<3; i++) {
 	rot2Target[i] = lerp(rot2Target[i], 0, 0.1);
 }
 
-// Bob while moving
-if (abs(force[X]) || abs(force[Y])) {
-	var _spd = 2;
-	var _sinX = abs(dsin(current_time / _spd));
-	_sinX *= _sinX;
-	var _sinZ = dsin(current_time / _spd);
+#region Bob while moving
+//if (abs(force[X]) || abs(force[Y])) {
+//	var _spd = 2.5;
+//	var _sinX = abs(dsin(current_time / _spd));
+//	_sinX *= _sinX;
+//	var _sinZ = dsin(current_time / _spd);
 	
-	rot2Target[X] = _sinX * 10;
-	rot2Target[Z] = _sinZ * 10;
-}
+//	var _mul = 1.5;
+//	rot2Target[X] = _sinX * _mul;
+//	rot2Target[Z] = _sinZ * _mul;
+//}
+#endregion
 
 // Land
 if (grounded && !groundedPrev) {
-	rot2Target[X] = 3;
+	rot2Target[X] = 4;
 }
 #endregion

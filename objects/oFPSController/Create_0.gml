@@ -25,8 +25,8 @@ col = ColShape(x, y, z, 32);
 force = [0, 0, 0];
 
 // Movement
-moveIncr = 0.2;
-moveMax = 2;
+moveIncr = 0.1;
+moveMax = 1.7;
 
 // Gravity
 gravIncr = 0.1;

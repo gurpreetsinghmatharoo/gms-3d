@@ -14,8 +14,8 @@ camera_set_view_mat(oGameController.camera, matView);
 #endregion
 
 // Bob test
-surface_set_target(oGameController.testSurf);
+//surface_set_target(oGameController.testSurf);
 
-draw_circle_color(RES_W / 2 + rot2Target[Z] * 5, RES_H / 2 - rot2Target[X] * 5, 2, c_red, c_red, 0);
+//draw_circle_color(RES_W / 2 + rot2Target[Z] * 10, RES_H / 2 - rot2Target[X] * 10, 2, c_red, c_red, 0);
 	
-surface_reset_target();
+//surface_reset_target();
