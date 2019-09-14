@@ -33,3 +33,7 @@ gravMax = 10;
 
 jumpSpeed = 1.5;
 #endregion
+
+// Vars
+grounded = false;
+groundedPrev = false;

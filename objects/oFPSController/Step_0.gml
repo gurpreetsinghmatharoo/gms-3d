@@ -49,5 +49,11 @@ y += force[Y];
 z += force[Z];
 
 // Update collisions
-ColUpdate();
+grounded = ColUpdate();
+#endregion
+
+#region Offset rotation
+for (var i=0; i<3; i++) {
+	rot2[i] = lerp(rot2[i], 0, 0.1);
+}
 #endregion
