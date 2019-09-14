@@ -53,7 +53,14 @@ grounded = ColUpdate();
 #endregion
 
 #region Offset rotation
+
+// Return to 0
 for (var i=0; i<3; i++) {
 	rot2[i] = lerp(rot2[i], 0, 0.1);
+}
+
+// Land
+if (grounded && !groundedPrev) {
+	rot2[X] = 20;
 }
 #endregion

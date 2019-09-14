@@ -11,10 +11,6 @@ mouseYDelta = mouseY - mouseYPrev;
 
 window_mouse_set(mouseXPrev, mouseYPrev);
 
-if (abs(mouseXDelta) || abs(mouseYDelta)) {
-	log("Mouse Motion: (", mouseXDelta, ", ", mouseYDelta, ")");
-}
-
 // Input
 right = keyboard_check(ord("D"));
 left = keyboard_check(ord("A"));
