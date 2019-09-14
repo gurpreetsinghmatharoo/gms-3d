@@ -1,2 +1,3 @@
-col[COL.X] = x;
-col[COL.Y] = y;
+col[X] = x;
+col[Y] = y;
+col[Z] = z;
