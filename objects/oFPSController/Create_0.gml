@@ -4,6 +4,9 @@ rot[X] = -30;
 rot[Y] = 0;
 rot[Z] = 0;
 
+// Offset rotation
+rot2 = [0, 0, 0];
+
 // Position
 z = depth;
 
