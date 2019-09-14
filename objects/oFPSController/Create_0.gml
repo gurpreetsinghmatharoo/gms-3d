@@ -41,4 +41,9 @@ jumpSpeed = 1.5;
 
 #region Create Weapon
 weapon = create3DObject(x, y, z, sGun0);
+
+with (weapon) {
+	var _s = 0.4;
+	scale = [_s, _s, _s];
+}
 #endregion
