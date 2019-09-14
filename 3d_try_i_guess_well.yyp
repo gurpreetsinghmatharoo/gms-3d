@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "6c63d206-963d-4f29-a62e-7fdb2b1ae118",
+            "Value": {
+                "id": "d700b2ba-0da4-4fa9-91b3-7e657851b2bd",
+                "resourcePath": "scripts\\ColShape\\ColShape.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "6f6ff6d5-438b-4a91-94d0-d613653c6e92",
             "Value": {
                 "id": "18bd500d-42dd-4ffb-83e8-8dc0aeb7bb83",
@@ -140,6 +148,14 @@
                 "id": "2760bba8-7e7d-4dde-a0cd-e1b9258b2042",
                 "resourcePath": "options\\ios\\options_ios.yy",
                 "resourceType": "GMiOSOptions"
+            }
+        },
+        {
+            "Key": "84628702-3462-4b4e-a2ee-5d0aca398bdc",
+            "Value": {
+                "id": "67611d24-e0fa-4576-9659-021695711fea",
+                "resourcePath": "views\\84628702-3462-4b4e-a2ee-5d0aca398bdc.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -261,10 +277,20 @@
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
             }
+        },
+        {
+            "Key": "faec0bf2-7109-4a82-a06b-836e80af3fbe",
+            "Value": {
+                "id": "264f71e7-fc02-455a-aa46-7224a945d649",
+                "resourcePath": "scripts\\constants\\constants.yy",
+                "resourceType": "GMScript"
+            }
         }
     ],
     "script_order": [
-        "bfcd5adf-7f86-4418-8cbb-c48e46f414ea"
+        "faec0bf2-7109-4a82-a06b-836e80af3fbe",
+        "bfcd5adf-7f86-4418-8cbb-c48e46f414ea",
+        "6c63d206-963d-4f29-a62e-7fdb2b1ae118"
     ],
     "tutorial": ""
 }

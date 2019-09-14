@@ -7,8 +7,11 @@ rotZ = 0;
 z = depth;
 
 // Mouse
-sensX = 1;
-sensY = 1;
+sensX = 0.2;
+sensY = 0.2
 
 mouseX = device_mouse_x(0);
 mouseY = device_mouse_y(0);
+
+// Collision shape
+col = new ColShape(32);

@@ -6,6 +6,7 @@
 // Resolution
 #macro RES_W 1280
 #macro RES_H 720
+#macro RES_SCALE 1
 
 // Set up camera
 camera = camera_create_view(0, 0, 1280, 720);
@@ -23,4 +24,7 @@ camera_set_proj_mat(camera, matProj);
 
 // Resolution
 window_set_size(RES_W, RES_H);
-surface_resize(application_surface, RES_W, RES_H);
+surface_resize(application_surface, RES_W / RES_SCALE, RES_H / RES_SCALE);
+
+// Mouse
+window_set_cursor(cr_none);
