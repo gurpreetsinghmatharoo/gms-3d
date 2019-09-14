@@ -110,7 +110,7 @@
     "viewSettings":     {
         "id": "5a211609-bf67-42b6-9797-434a8f55f137",
         "clearDisplayBuffer": true,
-        "clearViewBackground": false,
+        "clearViewBackground": true,
         "enableViews": false,
         "inheritViewSettings": false,
         "modelName": "GMRoomViewSettings",

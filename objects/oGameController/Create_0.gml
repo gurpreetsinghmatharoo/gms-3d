@@ -20,3 +20,7 @@ gpu_set_alphatestenable(true);
 
 matProj = matrix_build_projection_perspective_fov(FOV_DEFAULT, RES_W/RES_H, 0.3, 3000);
 camera_set_proj_mat(camera, matProj);
+
+// Resolution
+window_set_size(RES_W, RES_H);
+surface_resize(application_surface, RES_W, RES_H);

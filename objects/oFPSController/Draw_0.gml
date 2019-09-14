@@ -9,4 +9,6 @@ lookZ = z + dsin(rotX);
 
 // View matrix
 matView = matrix_build_lookat(x, y, z, lookX, lookY, lookZ, 0, 0, 1);
+
+camera_set_view_mat(oGameController.camera, matView);
 #endregion
