@@ -16,3 +16,6 @@ _colTemp[Z] += _offset[Z];
 
 /// Check for environment collisions
 // Floor
+if (_colTemp[Z] + _colTemp[RAD] > FLOOR_Z) {
+	_offset[@ Z] = 0;
+}
