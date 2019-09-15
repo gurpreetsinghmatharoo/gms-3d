@@ -3,8 +3,8 @@
 // Look at
 var lookX, lookY, lookZ;
 
-lookX = x + dcos(rot[Z] + rot2[Z]);
-lookY = y + dsin(rot[Z] + rot2[Z]);
+lookX = x + dcos(rot[Z] + rot2[Z]) * dcos(rot[X] + rot2[X]);
+lookY = y + dsin(rot[Z] + rot2[Z]) * dcos(rot[X] + rot2[X]);
 lookZ = z + dsin(rot[X] + rot2[X]);
 
 // View matrix
