@@ -11,8 +11,8 @@ var _dist = argument[2];
 // Dew it
 var _vecTemp = [];
 
-_vecTemp[X] = lengthdir_x(_dist, _rot[Z]);
-_vecTemp[Y] = lengthdir_y(_dist, _rot[Z]);
+_vecTemp[X] = lengthdir_x(_dist, _rot[Z]) * sin(_rot[X]);
+_vecTemp[Y] = lengthdir_y(_dist, _rot[Z]) * sin(_rot[X]);
 _vecTemp[Z] = lengthdir_y(_dist, _rot[X]);
 
 // Return
