@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "6c5356e7-a6d0-4d53-8427-8bcda9ec4351",
+            "Value": {
+                "id": "1c6eb128-170d-44ea-88fc-1ad187661623",
+                "resourcePath": "scripts\\vector_offset_angle\\vector_offset_angle.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "6c63d206-963d-4f29-a62e-7fdb2b1ae118",
             "Value": {
                 "id": "d700b2ba-0da4-4fa9-91b3-7e657851b2bd",
@@ -359,6 +367,14 @@
             }
         },
         {
+            "Key": "e48521bf-e218-44c6-9b76-a7294c76c3dc",
+            "Value": {
+                "id": "ac1903da-2037-4b0c-b04d-7bc5661d61c0",
+                "resourcePath": "views\\e48521bf-e218-44c6-9b76-a7294c76c3dc.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "f175e051-467d-464c-bac2-eb67c67d7f95",
             "Value": {
                 "id": "53cc0164-e6a5-46b8-8774-a1db095d726f",
@@ -399,7 +415,8 @@
         "d38d5632-5085-4a99-b14d-e0fefa032838",
         "9d7361a5-438c-4760-96f8-4cfdd862601b",
         "01da5d9a-127a-42cd-8cf2-8f587af9dcba",
-        "574cb967-a891-499d-8449-f09875d00cff"
+        "574cb967-a891-499d-8449-f09875d00cff",
+        "6c5356e7-a6d0-4d53-8427-8bcda9ec4351"
     ],
     "tutorial": ""
 }

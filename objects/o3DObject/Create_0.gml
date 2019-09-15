@@ -11,3 +11,6 @@ color = c_white;
 alpha = 1;
 
 vbuff = -1;
+
+// Billboard
+billboard = [0, 0, 0];
